@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box-1">
+                <div class="box-2">    
+                    <h3>Converter valor:</h3>
+                    <div class="box-num">
+                        <input id="num" type="number">
+                    </div>
+                </div>
+                <div class="box-2">
+                    <h3>Resultado:</h3> 
+                   <div class="box-3">
+                        <div id="resultado" style='display:grid'></div>
+                   </div>
+            </div>
+            </div>
+            <div class="box-1">
+                <div class="box-2">                
+                    <select id="mySelect" onchange="myFunction()">
+                        <option id="CtoK">Celsius para Kelvin    </option>
+                        <option id="CtoF">Celsius para Fahrenheit</option>
+                        <option id="CtoR">Celsius para Rankine   </option>
+
+                        <option id="FtoK">Fahrenheit para Kelvin </option>
+                        <option id="FtoC">Fahrenheit para Celsius</option>
+                        <option id="FtoR">Fahrenheit para Rankine</option>
+
+                        <option id="KtoC">Kelvin para Celsius    </option>
+                        <option id="KtoF">Kelvin para Fahrenheit </option>
+                        <option id="KtoR">Kelvin para Rankine    </option>
+
+                        <option id="RtoK">Rankine para Kelvin    </option>
+                        <option id="RtoC">Rankine para Celsius   </option>
+                        <option id="RtoF">Rankine para Fahrenheit</option>                        
+                    </select>
+                    <button onclick="myFunction()">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./script.js"></script></body>
+</html>
